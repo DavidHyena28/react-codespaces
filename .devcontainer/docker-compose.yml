@@ -8,13 +8,13 @@ services:
       - label:disable
 
   frontend:
+    #profiles: ["dev"]
     build:
       context: ../
       dockerfile: Dockerfile
-    #restart: always
     ports:
       - 3000:3000
     stdin_open: true
-    command: yarn start
+    command: yarn && yarn start
     volumes:
-       - ../:/usr/src/app
+       - /workspaces/react-codespaces:/usr/src/app
