@@ -1,0 +1,20 @@
+version: "3.6"
+services:
+  devcontainer:
+    image: ghcr.io/cachix/devenv:latest
+    volumes:
+      - ../..:/workspaces:cached
+    security_opt:
+      - label:disable
+
+  frontend:
+    build:
+      context: ../
+      dockerfile: Dockerfile
+    #restart: always
+    ports:
+      - 3000:3000
+    stdin_open: true
+    command: yarn start
+    volumes:
+       - ../packages:/usr/src/app
