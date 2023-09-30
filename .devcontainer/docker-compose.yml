@@ -17,4 +17,4 @@ services:
     stdin_open: true
     command: yarn start
     volumes:
-       - ../packages:/usr/src/app
+       - ../:/usr/src/app
