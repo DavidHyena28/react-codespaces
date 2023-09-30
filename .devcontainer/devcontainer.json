@@ -2,7 +2,7 @@
 	"name": "react-condespaces",
 	"dockerComposeFile": "docker-compose.yml",
 	"service": "devcontainer",
-	"forwardPorts": [3000],
+	"forwardPorts": [3001],
 	"workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
 
 	"userEnvProbe": "loginShell",
