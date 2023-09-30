@@ -21,3 +21,10 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+.direnv
+
+# Devenv
+.devenv*
+devenv.local.nix
+.pre-commit-config.yaml

@@ -37,18 +37,9 @@
     export COMPOSE_PROJECT_NAME=react-codespaces_devcontainer
   '';
 
-  # https://devenv.sh/languages/
-  languages.rust = {
-    enable = true;
-    # https://devenv.sh/reference/options/#languagesrustversion
-    version = "latest";
-    packages.rust-src = pkgs.rustPlatform.rustLibSrc;
-  };
-
   # https://devenv.sh/pre-commit-hooks/
   pre-commit.hooks = {
     clippy.enable = false;
-    rustfmt.enable = false;
     reuse = {
       enable = false;
       name = "Reuse license headers";
