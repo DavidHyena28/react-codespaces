@@ -1,0 +1,65 @@
+@charset "UTF-8";
+/* Reset de estilos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo básico para o corpo da página */
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #121212;
+  color: #fff;
+  padding: 20px;
+}
+
+/* Estilo para a navegação */
+.customPage-nav {
+  background-color: #222;
+  padding: 10px;
+}
+
+.customPage-nav-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.customPage-nav-list-item {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.customPage-nav-list-item button {
+  background-color: #555;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.customPage-nav-list-item button:hover {
+  background-color: #777;
+}
+
+/* Estilo para o conteúdo */
+.customPage-content {
+  background-color: #222;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para imagens */
+.customPage-content img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}/*# sourceMappingURL=styles.css.map */
